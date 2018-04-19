@@ -12,21 +12,12 @@ namespace AdensDemoSite.Controllers
     {
         public IActionResult Index()
         {
-            return View();
-        }
+            var model = new HomeViewModel
+            {
+                Message = "Hello Manchester!"
+            };
 
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
-
-            return View();
-        }
-
-        public IActionResult Contact()
-        {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            return View(model);
         }
 
         public IActionResult Error()
