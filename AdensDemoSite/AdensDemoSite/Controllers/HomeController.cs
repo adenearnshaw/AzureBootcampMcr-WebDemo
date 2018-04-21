@@ -14,7 +14,7 @@ namespace AdensDemoSite.Controllers
         {
             var model = new HomeViewModel
             {
-                Message = "Hello Manchester!"
+                Message = "Hello Everyone!"
             };
 
             return View(model);
